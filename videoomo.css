@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Handwriting", cursive;
+    background-color: black;
+}
+
+.glavni {
+    text-align: center;
+    padding: 50px 10px;
+    background-color: Maroon;
+    border-bottom: 3px solid Crimson;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    font-size: 3rem;
+    font-family: Verdana, sans-serif;
+}
+
+.videousi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.videocard {
+    width: 380px;
+    background-color: DarkSlateBlue;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid Maroon;
+    animation-name: appearanceeffect;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    transition: transform 0.4s;
+}
+
+@keyframes appearanceeffect {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.videocard:hover {
+    transform: scale(1.03);
+}
+
+.videoyt {
+    position: relative;
+}
+
+iframe {
+     border: none;
+    display: block;
+}
+
+.videotitle {
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: Maroon;
+    margin: 0;
+}
+
